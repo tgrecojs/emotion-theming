@@ -1,0 +1,33 @@
+{
+  "name": "emotion-themeing-lessong",
+  "version": "1.0.0",
+  "description": "code for eggheadio lesson on using emotion-theming library with react",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --no-minify"
+  },
+  "keywords": [],
+  "author": "Thomas Greco",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-macros": "^2.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react-app": "^3.1.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0",
+    "parcel-bundler": "^1.7.1",
+    "prop-types": "^15.6.1"
+  },
+  "dependencies": {
+    "emotion": "^9.1.2",
+    "emotion-theming": "^9.1.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-emotion": "^9.1.2"
+  }
+}

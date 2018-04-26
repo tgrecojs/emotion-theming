@@ -1,0 +1,9 @@
+{
+    "presets": ["react-app"],
+    "plugins": [
+      "macros",
+      "transform-object-rest-spread",
+      "transform-class-properties",
+      "transform-runtime"
+    ]
+}
