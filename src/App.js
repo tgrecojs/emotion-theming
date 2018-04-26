@@ -1,8 +1,6 @@
 import React from 'react';
-import styled, {css, injectGlobal}  from 'react-emotion/macro';
-import { ThemeProvider, withTheme } from 'emotion-theming';
+import {injectGlobal}  from 'react-emotion/macro';
 import { Header, Wrapper, PText } from './shared/components';
-import { theme } from './shared/themes';
 import Proptypes from 'prop-types';
 const { string } = Proptypes;
 
@@ -13,11 +11,11 @@ injectGlobal`
 `;
 
 const App = ({
-  title = 'Emotion Themeing Lesson',
+  title = 'Heading Text',
   text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit voluptas harum non deserunt ut dicta accusantium fugit neque consectetur nulla quam cum eveniet maxime ea, culpa, sunt, eaque officiis!'
 }) =>
   <Wrapper>
-    <Header>Header</Header>
+    <Header>{title}</Header>
     <PText>{text}</PText>
   </Wrapper>;
 
