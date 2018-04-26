@@ -1,22 +1,22 @@
 import styled from 'react-emotion/macro';
 
 const Header = styled.h2`
-    font-size: 32;
-    background-color: #003594;
-    font-family: "Hammersmith One";
-    color: #fff;
-    padding: 10px;
+    font-size: ${props => props.theme.fontStyles.size * 2};
+    background: ${props => props.theme.pallete.primaryTwo};
+    font-family: ${props => props.theme.headings.fontFamily};
+    color: ${props => props.theme.fontStyles.color};
+    padding: ${props => props.theme.defaultPadding};
 `;
 
 const Wrapper = styled.div`
-    height: 100vh;
-    background: #041E42;
-    color: #fff;
-    font-family: "Josefin Sans";
+    height: ${props => props.theme.containerHeight};
+    background: ${props => props.theme.pallete.primaryOne};
+    color: ${props => props.theme.fontStyles.color};
+    font-family: ${props => props.theme.fontStyles.family};
 `;
 
 const PText = styled.p`
-   padding: 10px;
+   padding: ${props => props.theme.defaultPadding};
    line-height: 1.4;
 `;
 
