@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, {css, injectGlobal}  from 'react-emotion/macro';
 import { ThemeProvider, withTheme } from 'emotion-theming';
-import { Header, Wrapper } from './shared/components';
+import { Header, Wrapper, PText } from './shared/components';
 import { theme } from './shared/themes';
 import Proptypes from 'prop-types';
 const { string } = Proptypes;
@@ -10,7 +10,6 @@ injectGlobal`
     body {
         margin: 0;
     }
-
 `;
 
 const App = ({
@@ -19,7 +18,7 @@ const App = ({
 }) =>
   <Wrapper>
     <Header>Header</Header>
-    <p>{text}</p>
+    <PText>{text}</PText>
   </Wrapper>;
 
 

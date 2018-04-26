@@ -12,7 +12,12 @@ const Wrapper = styled.div`
     height: 100vh;
     background: #041E42;
     color: #fff;
-    font-family: 'Josefin Sans'
+    font-family: "Josefin Sans";
 `;
 
-export { Header, Wrapper };
+const PText = styled.p`
+   padding: 10px;
+   line-height: 1.4;
+`;
+
+export { Header, Wrapper, PText };
